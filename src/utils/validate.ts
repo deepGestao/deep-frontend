@@ -1,19 +1,16 @@
-import {User} from "../types/User";
+import { User } from "../types/User";
+import { z } from "zod";
 
-type Error = {
-    [key: string]: string;
-};
+export const userRegisterSchema = z.object({
+  email: z.string().email("E-mail inválido").nonempty("O e-mail é obrigatório"),
+  password: z.string().min(6, "A senha deve ter pelo menos 6 caracteres"),
+  confirmPassword: z.string().min(6, "A confirmação da senha deve ter pelo menos 6 caracteres"),
+}).refine((data) => data.password === data.confirmPassword, {
+  path: ["confirmPassword"],
+  message: "As senhas não coincidem",
+});
 
-export const validate = (data: User) => {
-    const errors: Error = {};
-
-
-    if(!data.email){
-        errors["email"] = "O email é obrigatório";
-    }
-
-    if(!data.password){
-        errors["senha"] = "A senha é obrigatório";
-    }
-    return errors
-}
+export const userLoginSchema = z.object({
+  email: z.string().email("E-mail inválido").nonempty("O e-mail é obrigatório"),
+  password: z.string().min(6, "A senha deve ter pelo menos 6 caracteres"),
+});
