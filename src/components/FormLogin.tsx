@@ -25,7 +25,7 @@ const FormLogin = () => {
       return;
     }
 
-    // Lógica de login (ex: AWS Cognito)
+    // login  AWS Cognito
     alert("Login realizado com sucesso!");
   };
 

@@ -1,14 +1,9 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        'hero-pattern': "url('/public/assets/this.jpg')", // Caminho relativo à pasta public
-      },
-    },
+    extend: {},
   },
   plugins: [],
-};
+}

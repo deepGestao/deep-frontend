@@ -1,4 +1,4 @@
-import { User } from "../types/User";
+
 import { z } from "zod";
 
 export const userRegisterSchema = z.object({
