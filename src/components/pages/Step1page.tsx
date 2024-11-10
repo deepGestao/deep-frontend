@@ -45,9 +45,9 @@ const Step1Page = () => {
         </div>
 
         {/* Formulário de Etapa 1 */}
-        <h1 className="font-bold text-center text-[40px] leading-[46.88px]">Bem-vindo!</h1>
-        <p className="mt-4 text-center text-[18px] leading-[21.09px]">
-          Qual o seu nome?
+        <h1 className="font-Roboto text-center text-[40px] leading-[46.88px]">Bem-vindo!</h1>
+        <p className="mt-4 font-Roboto text-left text-[18px] leading-[21.09px]">
+          Como posso te chamar?
         </p>
         <input
           type="text"

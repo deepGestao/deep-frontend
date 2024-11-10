@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'; // Ícones para navegação
 
 const Step2Page = () => {
   const location = useLocation();
@@ -15,9 +16,25 @@ const Step2Page = () => {
     }
   };
 
+  const handleGoBack = () => {
+    // Navegação para a etapa anterior, por exemplo, para a página anterior
+    navigate(-1);  // Navega para a página anterior
+  };
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
       <div className="w-full max-w-md p-8 bg-white rounded-lg shadow-lg border border-gray-300">
+
+{/* Ícone para voltar */}
+<div className="absolute top-4 left-4">
+          <button
+            onClick={handleGoBack}
+            className="p-2 bg-gray-300 rounded-full hover:bg-gray-400"
+          >
+            <FiChevronLeft className="text-xl text-black" />
+          </button>
+        </div>
+
         {/* Barra de Etapas */}
         <div className="flex justify-between mb-6">
           <div className="flex flex-col items-center">
@@ -47,8 +64,8 @@ const Step2Page = () => {
         </div>
 
         {/* Formulário de Etapa 2 */}
-        <h1 className="font-bold text-center text-[40px] leading-[46.88px]">Opa, {name}!</h1>
-        <p className="mt-4 text-center text-[18px] leading-[21.09px]">
+        <h1 className="font-Roboto text-center text-[40px] leading-[46.88px]">Ola, {name}!</h1>
+        <p className="mt-4 font-Roboto text-left text-[18px] leading-[21.09px]">
           Qual é o seu CPF ou CNPJ?
         </p>
         <input

@@ -97,10 +97,7 @@ const Step4Page = () => {
         </div>
 
         {/* Título e Instruções */}
-        <h1 className="font-bold text-center text-[40px] leading-[46.88px]">Escolha seu plano, {name}!</h1>
-        <p className="mt-4 text-center text-[18px] leading-[21.09px]">
-          Selecione o plano que você deseja.
-        </p>
+        <h1 className="font-Roboto text-center text-[40px] leading-[46.88px]">Escolha seu plano, {name}!</h1>
 
         {/* Navegação dos Planos */}
         <div className="mt-6 flex items-center justify-center space-x-6">
