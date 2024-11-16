@@ -19,25 +19,25 @@ const Step1Page = () => {
         {/* Barra de Etapas */}
         <div className="flex justify-between mb-6">
           <div className="flex flex-col items-center">
-            <div className="h-8 w-8 rounded-full flex items-center justify-center bg-[#1D4ED8] text-white font-bold">
+            <div className="h-8 w-8 rounded-full flex items-center justify-center bg-black text-white font-bold">
               1
             </div>
             <span className="text-sm">Etapa 1</span>
           </div>
           <div className="flex flex-col items-center">
-            <div className="h-8 w-8 rounded-full flex items-center justify-center bg-[#D1D5DB] text-white font-bold">
+            <div className="h-8 w-8 rounded-full flex items-center justify-center bg-black text-white font-bold">
               2
             </div>
             <span className="text-sm">Etapa 2</span>
           </div>
           <div className="flex flex-col items-center">
-            <div className="h-8 w-8 rounded-full flex items-center justify-center bg-[#D1D5DB] text-white font-bold">
+            <div className="h-8 w-8 rounded-full flex items-center justify-center bg-black text-white font-bold">
               3
             </div>
             <span className="text-sm">Etapa 3</span>
           </div>
           <div className="flex flex-col items-center">
-            <div className="h-8 w-8 rounded-full flex items-center justify-center bg-[#D1D5DB] text-white font-bold">
+            <div className="h-8 w-8 rounded-full flex items-center justify-center bg-black text-white font-bold">
               4
             </div>
             <span className="text-sm">Etapa 4</span>

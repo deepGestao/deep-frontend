@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'; // Ícones para navegação
+import { FiChevronLeft, FiChevronRight, FiCheck } from 'react-icons/fi'; // Ícones para navegação
 
 const Step3Page = () => {
   const location = useLocation();
@@ -39,25 +39,25 @@ const Step3Page = () => {
         {/* Barra de Etapas */}
         <div className="flex justify-between mb-6">
           <div className="flex flex-col items-center">
-            <div className="h-8 w-8 rounded-full flex items-center justify-center bg-[#1D4ED8] text-white font-bold">
-              1
+            <div className="h-8 w-8 rounded-full flex items-center justify-center bg-black text-white font-bold">
+            <FiCheck className="text-xl text-white" />
             </div>
             <span className="text-sm">Etapa 1</span>
           </div>
           <div className="flex flex-col items-center">
-            <div className="h-8 w-8 rounded-full flex items-center justify-center bg-[#1D4ED8] text-white font-bold">
-              2
+            <div className="h-8 w-8 rounded-full flex items-center justify-center bg-black text-white font-bold">
+            <FiCheck className="text-xl text-white" />
             </div>
             <span className="text-sm">Etapa 2</span>
           </div>
           <div className="flex flex-col items-center">
-            <div className="h-8 w-8 rounded-full flex items-center justify-center bg-[#1D4ED8] text-white font-bold">
+            <div className="h-8 w-8 rounded-full flex items-center justify-center bg-black text-white font-bold">
               3
             </div>
             <span className="text-sm">Etapa 3</span>
           </div>
           <div className="flex flex-col items-center">
-            <div className="h-8 w-8 rounded-full flex items-center justify-center bg-[#D1D5DB] text-white font-bold">
+            <div className="h-8 w-8 rounded-full flex items-center justify-center bg-black text-white font-bold">
               4
             </div>
             <span className="text-sm">Etapa 4</span>
